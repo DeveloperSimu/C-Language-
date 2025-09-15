@@ -1,0 +1,22 @@
+// C Program to Display an Integer Value using Different printf() Formats
+
+#include<stdio.h>
+int main()
+{
+   printf("\n The number is =%d",1234);
+   printf("\n The number is =%6d",1234);
+   printf("\n The number is =%-6d",1234);
+   printf("\n The number is =%06d",1234);
+   printf("\n The number is =%-06d",1234);
+   printf("\n The number is =%2d",1234);
+    return 0;
+}
+
+
+Output:
+The number is =1234
+The number is =  1234
+The number is =1234  
+The number is =001234
+The number is =1234  
+The number is =1234

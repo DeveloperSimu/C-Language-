@@ -1,0 +1,41 @@
+// C Program to Calculate the Sum of the Series 1 + (1+2) + (1+2+3) + ... up to n Terms
+
+#include <stdio.h>
+
+int main() {
+    int n, i = 1, sum = 0;
+
+    // Input the number of terms
+    printf("Enter the number of terms (n): ");
+    scanf("%d", &n);
+
+    // Do-while loop to calculate the sum
+    do {
+        int innerSum = 0;  // Variable to store the sum of inner series (1+2+...+i)
+        int j = 1;
+
+        // Calculate the sum of inner series
+        while (j <= i) {
+            innerSum += j;
+            j++;
+        }
+
+        // Add the sum of inner series to the overall sum
+        sum += innerSum;
+
+        // Move to the next term
+        i++;
+
+    } while (i <= n);
+
+    // Print the result
+    printf("Sum of the given series up to %d terms: %d\n", n, sum);
+
+    return 0;
+}
+
+
+
+Output:
+Enter the number of terms (n): 4
+Sum of the given series up to 4 terms: 20

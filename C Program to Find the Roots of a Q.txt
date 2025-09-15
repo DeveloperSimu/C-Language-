@@ -1,0 +1,32 @@
+// C Program to Find the Roots of a Quadratic Equation
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{int a, b, c;
+float D, deno, root1,root2,root;
+printf("\nEnter the values of a,b,and c:");
+scanf("%d %d %d",&a,&b,&c);
+D=(b*b)-(4*a*c);
+deno=2*a;
+if(D>0)
+{
+root1=(-b+sqrt(D))/deno;
+root2=(-b-sqrt(D))/deno;
+printf("\n The roots are REAL and they are:%f and %f", root1, root2);
+}
+else
+{if(D==0)
+{root=-b/deno;
+printf("\n The roots are equal and their value is=%f", root1);
+}
+else
+printf("\n The roots are imaginary");
+}
+return 0;
+}
+
+
+Output:
+ Enter the values of a,b,and c:65 54 32
+ The roots are imaginary

@@ -1,0 +1,35 @@
+// C Program to Find the Size of Pointer Variables
+
+#include<stdio.h>
+int main() 
+{
+   int*pnum;
+   char*pch;
+   float*pfnum;
+   double*pdnum;
+   long*plnum;
+   printf("\n The size of integer variable is=%d",sizeof(int));
+   printf("\n The size of integer pointer variable is=%d",sizeof(pnum));
+   printf("\n The size of character variable is=%d",sizeof(char));
+   printf("\n The size of character pointer variable is=%d",sizeof(pch));
+   printf("\n The size of float variable is=%d",sizeof(float));
+   printf("\n The size of float pointer variable is=%d",sizeof(pfnum));
+   printf("\n The size of double variable is=%d",sizeof(double));
+   printf("\n The size of double pointer variable is=%d",sizeof(pdnum));
+   printf("\n The size of long integer variable is=%d",sizeof(long int));
+   printf("\n The size of long pointer variable is=%d",sizeof(plnum));
+return 0;
+}              
+
+
+Output:
+ The size of integer variable is=4
+ The size of integer pointer variable is=8
+ The size of character variable is=1
+ The size of character pointer variable is=8
+ The size of float variable is=4
+ The size of float pointer variable is=8
+ The size of double variable is=8
+ The size of double pointer variable is=8
+ The size of long integer variable is=8
+ The size of long pointer variable is=8

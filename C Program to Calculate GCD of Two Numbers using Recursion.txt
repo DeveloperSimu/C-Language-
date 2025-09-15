@@ -1,0 +1,26 @@
+// C Program to Calculate GCD of Two Numbers using Recursion
+
+#include<stdio.h>
+int GCD(int,int); 
+int main()
+{
+    int a,b,res;
+    printf("\n Enter two numbers to calculate GCD of them:");
+    scanf("%d%d",&a,&b);
+    res=GCD(a,b);
+    printf("\n The GCD of %d and %d is=%d",a,b,res);
+    return 0;
+}
+int GCD(int m,int n)
+{int rem;
+rem=m%n;
+if(rem==0)
+return n;
+else
+return(GCD(n,rem));
+}
+
+
+Output:
+Enter two numbers to calculate GCD of them: 36 60
+The GCD of 36 and 60 is=12

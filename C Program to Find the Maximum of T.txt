@@ -1,0 +1,23 @@
+// C Program to Find the Maximum of Three Numbers
+
+#include<stdio.h>
+int main()
+{int a, b, c;
+    printf("\n Enter 3 number:");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b&&a>c)
+    printf("\n The max value is=%d", a);
+    else
+    {if(b>a&&b>c)
+    printf("\n The max value is=%d", b);
+    else
+    printf("\n The max value is=%d", c);
+    }
+return 0;
+}
+
+
+Output:
+ Enter 3 number:55 42 61
+
+ The max value is=61

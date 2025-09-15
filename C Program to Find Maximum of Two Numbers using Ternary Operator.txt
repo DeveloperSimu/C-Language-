@@ -1,0 +1,14 @@
+// C Program to Find Maximum of Two Numbers using Ternary Operator
+
+#include<stdio.h>
+int main()
+{
+int a=3,b=2,c;
+c=a>b?a:b;
+printf("%d",c);
+return 0;
+}
+
+
+Output:
+3

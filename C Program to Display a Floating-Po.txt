@@ -1,0 +1,24 @@
+// C Program to Display a Floating-Point Value using Different printf() Formats
+
+#include<stdio.h>
+int main()
+{float a=98.7628;
+printf("\n The float number is=%f", a);
+printf("\n The float number is=%7.4f", a);
+printf("\n The float number is=%7.2f", a);
+printf("\n The float number is=%10.2e", a);
+printf("\n The float number is=%11.4e", a);
+printf("\n The float number is=%-10.2e", a);
+printf("\n The float number is=%e", a);
+return 0;
+}
+
+
+Output:
+The float number is=98.762802
+The float number is=98.7628
+The float number is=   98.76
+The float number is=   9.88e+01
+The float number is= 9.8763e+01
+The float number is=9.88e+01  
+The float number is=9.876280e+01

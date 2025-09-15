@@ -1,0 +1,48 @@
+// C Program to Compare Two Strings and Determine the Greater One
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char str1[20], str2[20], i, j, len1, len2, l, greater;
+	printf("\n Enter first string:");
+	gets(str1);
+	printf("\n Enter second string:");
+	gets(str2);
+	len1 = strlen(str1);
+	len2 = strlen(str2);
+	if (len1 <= len2)
+		l = len1;
+	else
+		l = len2;
+
+	for (i = 0; i < l; i++)
+	{
+		if (str1[i] == str2[i])
+		{
+			if (i == l - 1)
+			{
+				printf("\nboth string are equal");
+				return 0;
+			}
+		}
+		else if(str1[i] > str2[i])
+		{
+			greater = 1;
+			break;
+		}
+	}
+	if (greater == 1)
+		printf("\n String 1 is %s is greater than string 2 i.e. %s", str1, str2);
+	else
+		printf("\n String 2 i.e. %s is greater than string 1 i.e. %s", str2, str1);
+
+	return 0;
+}
+
+
+Output:
+Enter first string: apple
+Enter second string: banana
+
+String 2 i.e. banana is greater than string 1 i.e. apple

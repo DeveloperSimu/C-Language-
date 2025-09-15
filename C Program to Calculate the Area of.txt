@@ -1,0 +1,22 @@
+// C Program to Calculate the Area of a Triangle using Heron's Formula
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a, b, c, area, semi;
+    printf("Enter 3 sides of a triangle: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    semi = (a + b + c) / 2;
+    area = sqrt(semi * (semi - a) * (semi - b) * (semi - c));
+
+    printf("The area of the given triangle is = %.2f", area);
+    return 0;
+}
+
+
+
+Output:
+Enter 3 sides of a triangle: 3 4 5
+The area of the given triangle is = 6.00

@@ -1,0 +1,70 @@
+// C Program to Add Two Matrices using Functions
+
+#include <stdio.h>
+void addMatrix(int a[10][10], int b[10][10], 
+               int c[10][10], int row, int column)
+{
+  for(int i=0; i< row; ++i)
+  {
+    for(int j=0; j< column; ++j)
+    {
+      c[i][j] = a[i][j] + b[i][j];
+    }
+  }
+}
+// function to read matrix
+void readMatrix(int matrix[10][10], int row, int column)
+{
+  for (int i = 0; i < row; ++i)
+  {
+    for (int j = 0; j < column; ++j)
+    {
+      scanf("%d", &matrix[i][j]);
+    }
+  }
+}
+// function to display matrix
+void displayMatrix(int matrix[10][10], int row, int column)
+{
+  for (int i = 0; i < row; ++i)
+  {
+    for (int j = 0; j < column; ++j)
+    {
+      printf("%d ", matrix[i][j]);
+    }
+    printf("\n");
+  }
+}
+int main()
+{
+  int a[10][10]; 
+  int b[10][10]; 
+  int c[10][10]; 
+  int row, column;
+  printf("Enter Row and Column Sizes: ");
+  scanf("%d %d", &row, &column);
+
+  // read matrix A and B
+  printf("Enter Matrix-1 Elements: \n");
+  readMatrix(a, row, column);
+  printf("Enter Matrix-2 Elements: \n");
+  readMatrix(b, row, column);
+  addMatrix(a, b, c, row, column);
+  printf("Resultant Matrix: \n");
+  displayMatrix(c, row, column);
+
+  return 0;
+}
+
+
+Output:
+Enter Row and Column Sizes: 2 3
+Enter Matrix-1 Elements: 
+1 2 3
+4 5 6
+Enter Matrix-2 Elements: 
+6 5 4
+3 2 1
+Resultant Matrix: 
+7 7 7
+7 7 7
